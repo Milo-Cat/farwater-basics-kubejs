@@ -1,3 +1,4 @@
 ServerEvents.recipes(event => {
-  event.recipes.create.compacting([Fluid.lava(10), 'create:empty_blaze_burner'], ['create:empty_blaze_burner'])
+	console.log('Adding blazing blood recipe');
+  event.recipes.create.compacting([Fluid.of('tconstruct:blazing_blood', 250), 'create:empty_blaze_burner'], ['create:blaze_burner'])
 })
